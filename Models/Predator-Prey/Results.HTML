@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : Predator-Prey
+   Created : 2011-06-21
+   Revised : 2011-06-22
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Predator-Prey : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/SlideBar.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Results
+
+<p><span id='X'></span>
+
+<p><span id='M-Count'></span>
+<br><span id='M-Births' class='Indented'></span>
+<br><span id='M-Deaths' class='Indented'></span>
+
+<p><span id='W-Count'></span>
+<br><span id='W-Births' class='Indented'></span>
+<br><span id='W-Deaths' class='Indented'></span>
+
+<p>
+<input type='text' id='M-Count0Box' size='6'>
+<button onclick='EditBox.Clicked("M-Count0")'> OK </button>
+<span id='M-Count0'></span>
+
+<br>
+<input type='text' id='W-Count0Box' size='6'>
+<button onclick='EditBox.Clicked("W-Count0")'> OK </button>
+<span id='W-Count0'></span>
+
+<p><span id='M-Min'></span>
+<br><span id='M-Max'></span>
+<p><span id='W-Min'></span>
+<br><span id='W-Max'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='XY'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

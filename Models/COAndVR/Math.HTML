@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+   Math.HTML
+
+   Title : CO And VR
+   Created : 2011-06-22
+   Revised : 2011-06-22
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> CO And VR - Math </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Math </span>
+
+<p>
+The challenge was outlined in the Overview document.
+
+<p>
+We have cardiac output (CO) as a function of right atrial
+pressure.
+
+<p class='Indented'>
+   (1) CO = f (RAP) * HS
+
+<p>
+I'll rearrange Equation (2) to get right-atrial pressure
+(RAP) on the left-hand side. Now we have RAP as a function
+of venous return (VR). 
+
+<p class='Indented'>
+   (4) RAP = MCFP - VR * RVR
+
+<p>
+It is likely that cardiac output (CO) will never be exactly
+equal to venous return (VR) as specified in Equation (3).
+
+<p class='Indented'>
+   (3) CO = VR
+
+<p>
+So we'll change the rules a bit and say that we have
+a solution when CO is nearly equal to VR. That is
+
+<p class='Indented'>
+   (5) | VR - CO | &lt;= Error Limit
+
+<p>
+The absolute value brackets indicate that we don't
+care about the sign of the error. We only care about
+the magnitude of the error.
+
+<p>
+The model uses an implicit algebraic equation solver
+to do all the work. I arbitrarily set the error limit
+at 10.0. You'll notice when using the model that the
+difference between CO and VR is alway 10 or less.
+
+<p>
+The calculation sequence is as follows.
+
+<ul>
+<li> Begin with a trial value of VR.
+<p>
+<li> Use Equation (4) to calculate RAP as a function
+of VR.
+<p>
+<li> Use Equation (1) to calculate CO as a function
+of RAP.
+<p>
+<li> Use Equation (5) to compare VR and CO. If the
+absolute value of the difference is less than the
+error limit, we have a solution. If the difference
+is greater than the error limit, pick a better value
+of VR and repeat these steps.
+
+</ul>
+
+</body>
+</html>

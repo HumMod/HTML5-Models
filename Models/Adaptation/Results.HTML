@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : Adaptation
+   Created : 2011-06-20
+   Revised : 2011-06-21
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Adaptation : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/SlideBar.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Results
+
+<p><span id='X'></span>
+
+<p><span id='I'></span>
+<br><span id='O'></span>
+<br><span id='A'></span>
+
+<p><span id='Derv'></span>
+<br><span id='Tau'></span>
+<br><span id='t 1/2'></span>
+
+<p>
+<input type='text' id='KBox' size='6'>
+<button onclick='EditBox.Clicked("K")'> OK </button>
+<span id='K'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='XY'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!--
+   Summary.HTML
+
+   Model : Circulatory Model
+   Panel : Summary
+   Created : 2011-06-23
+   Revised : 2011-06-23
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Circulatory Model : Summary </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Summary.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Summary
+
+<p><span id='X'></span>
+
+<p>
+<span id='AP'></span>
+
+<br>
+<span id='CO'></span>
+
+<br>
+<span id='TPR'></span>
+
+<br>
+<span id='ECFV'></span>
+
+<br>
+<span id='BV'></span>
+
+<br>
+<span id='MCFP'></span>
+
+<br>
+<span id='RAP'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='Canvas-AP'></canvas>
+<br>
+<canvas id='Canvas-CO'></canvas>
+<br>
+<canvas id='Canvas-TPR'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

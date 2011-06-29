@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--
+   Details.HTML
+
+   Title : CO And VR
+   Created : 2011-06-22
+   Revised : 2011-06-22
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+
+<html>
+<head>
+<title> CO And VR - Details </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Details </span>
+
+<p>
+Here is a list of the CO-And-VR model's variables. Note
+that the model is not solved as a function of time. It
+has no differential equations.
+
+<p>
+<b>Cardiac Output (CO)</b> is the rate of blood flow from the
+heart to the periphery. Units are mL/Min.
+
+<p>
+<b>Venous Return (VR)</b> is the rate of blood flow from the
+periphery back to the heart. Units are mL/Min.
+
+<p>
+<b>Right Atrial Pressure (RAP)</b> is the blood pressure in
+the right atrium. Units are mmHg. This is a key variable in
+that it influences both cardiac output and venous return.
+
+<p>
+<b>Mean Circulatory Filling Pressure (MCFP)</b> is a virtual
+pressure that pushes blood from the periphery back to the
+heart. Think of it as a functional venous pressure. Units
+are mmHg.
+
+<p>
+<b>Resistance To Venous Return (RVR)</b> is a virtual hemodynamic
+resistance that opposes the flow of blood back to the heart. It
+is roughly equivalent to venous resistance. Units are mmHg/(mL/Min).
+
+<p>
+<b>Heart Strength (HS)</b> is a parameter that moves the plateau of
+the Starling curve up and down. Units are x Normal.
+
+<p>
+<img src = "StarlingCurve.BMP">
+
+<br>
+And we have one curvilinear function called Starling Curve
+which relates cardiac output (CO) to right atrial pressure
+(RAP).
+
+<p>
+The curve's data points are shown as red circles above and
+are tabulated below.
+
+<table border='1' cellspacing='0' align='center'>
+<tr align='RIGHT'><td> X</td><td>    Y</td><td>Slope</td></tr>
+<tr align='RIGHT'><td>-4</td><td>    0</td><td>    0</td></tr>
+<tr align='RIGHT'><td> 0</td><td> 5400</td><td> 1500</td></tr>
+<tr align='RIGHT'><td>10</td><td>12500</td><td>    0</td></tr>
+</table>
+
+</body>
+</html>

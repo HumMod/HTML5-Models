@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : Predator-Prey
+   Created : 2011-06-21
+   Revised : 2011-06-22
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Predator-Prey : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Results
+
+<p><span id='X'></span>
+
+<p>
+<canvas id='Bar'></canvas>
+
+<p><span id='H'></span>
+<br><span id='C'></span>
+<br><span id='R'></span>
+
+<p>
+<input type='text' id='C0Box' size='6'>
+<button onclick='EditBox.Clicked("C0")'> OK </button>
+<span id='C0'></span>
+
+<br>
+<input type='text' id='VBox' size='6'>
+<button onclick='EditBox.Clicked("V")'> OK </button>
+<span id='V'></span>
+
+<br>
+<input type='text' id='RSBox' size='6'>
+<button onclick='EditBox.Clicked("RS")'> OK </button>
+<span id='RS'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='XY'></canvas>
+
+<p>
+Blue = Healthy, Red = Ill, Black = Recovered
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

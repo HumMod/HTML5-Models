@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : Distance
+   Created : 2011-06-21
+   Revised : 2011-06-21
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Distance : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/SlideBar.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Results
+
+<p><span id='X'></span>
+
+<p><span id='VertDis'></span>
+<br><span id='VertVel'></span>
+<br><span id='VertAcc'></span>
+
+<p><span id='HorzDis'></span>
+<br><span id='HorzVel'></span>
+<br><span id='HorzAcc'></span>
+
+<p>
+<input type='text' id='AngleBox' size='6'>
+<button onclick='EditBox.Clicked("Angle")'> OK </button>
+<span id='Angle'></span>
+
+<p><span id='Radians'></span>
+<br><span id='Speed'></span>
+
+<p><span id='MaxHigh'></span>
+<br><span id='MaxDis'></span>
+
+</div>
+
+<div class="RightColumn">
+
+<canvas id='XY'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

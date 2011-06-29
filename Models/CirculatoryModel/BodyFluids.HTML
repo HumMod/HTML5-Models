@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!--
+   BodyFluids.HTML
+
+   Model : Circulatory Model
+   Panel : Body Fluids
+   Created : 2011-06-23
+   Revised : 2011-06-24
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Circulatory Model : Body Fluids </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "BodyFluids.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyTools.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Body Fluids
+
+<p><span id='X'></span>
+
+<p><span id='ECFV'></span>
+<br><span id='E-Change' class='Indented'></span>
+
+<p>
+<input type='text' id='InBox' size='6'>
+<button onclick='EditBox.Clicked("In")'> OK </button>
+<span id='In'></span>
+
+<br><span id='UO'></span>
+
+<p><span id='BV'></span>
+
+<p>
+<canvas id='BVvsECFV'></canvas>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='Canvas-ECFV'></canvas>
+<br>
+<canvas id='Canvas-BV'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

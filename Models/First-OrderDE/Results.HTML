@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : First-OrderDE
+   Panel : Results
+   Created : 2011-06-24
+   Revised : 2011-06-24
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> First-OrderDE : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/Info.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Summary
+
+<p><span id='X'></span>
+
+<p>
+<span id='Y'></span>
+<br>
+<span id='Y-Change'></span>
+<br>
+<span id='Y-Exact'></span>
+
+<p>
+<input type='text' id='KBox' size='6'>
+<button onclick='EditBox.Clicked("K")'> OK </button>
+<span id='K'></span>
+
+<br>
+<span id='Tau'></span>
+<br>
+<span id='T-Half'></span>
+
+<p>
+<span id='Error'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='Canvas-Y'></canvas>
+<br>
+Line = Numerical, Dot = Exact
+<br>
+<canvas id='Canvas-Change'></canvas>
+<br>
+<canvas id='Canvas-Error'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!--
+   NextMenu.HTML
+
+   Created : 2011-05-29
+   Revised : 2011-06-18
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Menu </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../Style.CSS'
+>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../Services/Menu.CSS'
+>
+
+</head>
+
+<body>
+
+<input
+   type = "button"
+   class = "Buttons"
+   value = "System"
+   onClick = "top.SystemPanel.Show()"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "User's Guide"
+   onClick = "top.Launch.LoadPanel('../../UsersGuide/UsersGuide.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Browser"
+   onClick = "top.Launch.LoadPanel('../../Browser/Browser.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "E-mail"
+   onClick = "top.Launch.LoadPanel('../../Email/Email.HTML')"
+>
+
+<p>
+<input
+   type = "button"
+   id = "Previous"
+   value = "Previous"
+   onClick = "top.Menu.LoadMain()"
+>
+
+</body>
+</html>

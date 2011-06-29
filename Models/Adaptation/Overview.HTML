@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+   Overview.HTML
+
+   Title : Adaptation
+   Created : 2010-07-03
+   Revised : 2010-07-03
+   Author : Tom Coleman
+   Copyright : 2010-2010
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Adaptation - Overview </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+A disturbance is initially propagated from
+input (I) to output (O).  As time passes, the
+output gradually returns to its previous value.
+
+<p>
+Adaptation is defined by
+
+<p class='Indented'>
+   dA/dt = K * O
+<br class='Indented'>
+   O = I - A
+
+<p>
+The first equation can also be expressed as
+
+<p class='Indented'>
+A = <img src='../../Services/IntegralSign.BMP'> K * O dt
+
+<p>
+K is the rate constant of the time delay.  The
+time constant (Tau) of the delay is the
+reciprocal of the rate constant.
+
+<p class='Indented'>
+   Tau = 1 / K
+
+<p>
+For a step change in input, when time = Tau,
+O = 0.63 * I.
+
+<p>
+The half-time of the step response is the time
+required for the output go one-half way to its
+final value.
+
+<p class='Indented'>
+   t 1/2 = 0.69 * Tau
+
+</body>
+</html>

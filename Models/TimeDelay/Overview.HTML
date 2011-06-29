@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+   Overview.HTML
+
+   Model : TimeDelay
+   Created : 2011-06-25
+   Revised : 2011-06-25
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Time Delay : Overview </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Overview </span>
+
+<p>
+A disturbance is not initially propagated from
+input to output.  As time passes, the output
+gradually increases to equal the input.
+
+<p>
+A time delay is defined by
+
+<p class='Indented'>
+   dOutput/dt = K * (Input - Output)
+
+<p>
+K is the rate constant of the time delay.  The
+time constant (Tau) of the delay is the reciprocal
+of the rate constant.
+
+<p class='Indented'>
+   Tau = 1 / K
+
+<p>
+For a step change in input, when time = Tau,
+Output = 0.63 * Input.
+
+<p>
+The half-time of the step response is the time
+required for the output go one-half way to its
+final value.
+
+<p class='Indented'>
+   t 1/2 = 0.69 * Tau
+
+</body>
+</html>

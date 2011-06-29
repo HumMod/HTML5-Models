@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : Nerve
+   Panel : Summary
+   Created : 2011-06-27
+   Revised : 2011-06-27
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Nerve : Summary </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Summary.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/Info.JS"></script>
+<script language = "javascript" src = "../../Drawing/RadioButtons.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Summary
+<button onclick='Info.Show("HandH")' class='Indented'> ! </button>
+
+<p><span id='X'></span>
+
+<p>
+<span id='V'></span>
+
+<p>
+<span id='I-Na'></span>
+<br>
+<span id='I-K'></span>
+<br>
+<span id='I-Leak'></span>
+
+<p>
+<span id='G-Na'></span>
+<br>
+<span id='G-K'></span>
+<br>
+<span id='G-Leak'></span>
+
+<p>
+<span id='V-Na'></span>
+<br>
+<span id='V-K'></span>
+<br>
+<span id='V-Leak'></span>
+
+</div>
+
+<div class="RightColumn">
+<canvas id='Canvas-V'></canvas>
+<br>
+<canvas id='Canvas-I'></canvas>
+<br>
+Na+ = Red, K+ = Blue
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

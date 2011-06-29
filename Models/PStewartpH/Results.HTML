@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!--
+   Results.HTML
+
+   Model : PStewartpH
+   Panel : Results
+   Created : 2011-06-26
+   Revised : 2011-06-27
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> P. Stewart pH : Results </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "Results.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/Info.JS"></script>
+<script language = "javascript" src = "../../Drawing/RadioButtons.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Results
+
+<p>
+<span id='X'></span>
+
+<p>
+<span id='pH'></span>
+
+<br>
+<span id='H-Ion'></span>
+
+<br>
+<span id='OH-Ion'></span>
+
+<p>
+<input type='text' id='ATot-mEqBox' size='6'>
+<button onclick='EditBox.Clicked("ATot-mEq")'> OK </button>
+<span id='ATot-mEq'></span>
+
+<br>
+<span id='A-mEq'></span>
+<br>
+<span id='HA-mEq'></span>
+
+<p>
+<input type='text' id='SID-mEqBox' size='6'>
+<button onclick='EditBox.Clicked("SID-mEq")'> OK </button>
+<span id='SID-mEq'></span>
+
+<p>
+<input type='text' id='pCO2Box' size='6'>
+<button onclick='EditBox.Clicked("pCO2")'> OK </button>
+<span id='pCO2'></span>
+
+<br>
+<span id='CO2-mMol'></span>
+
+<p>
+<span id='H2CO3-uMol'></span>
+<br>
+<span id='HCO3-uMol'></span>
+<br>
+<span id='CO3-uMol'></span>
+
+</div>
+
+<div class="RightColumn">
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

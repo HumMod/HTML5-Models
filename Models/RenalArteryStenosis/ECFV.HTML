@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!--
+   ECFV.HTML
+
+   Model : RenalArteryStenosis
+   Panel : ECFV
+   Created : 2011-06-26
+   Revised : 2011-06-26
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Renal Artery Stenosis : ECFV </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "ECFV.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/Info.JS"></script>
+<script language = "javascript" src = "../../Drawing/RadioButtons.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyTools.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> ECFV
+
+<p><span id='X'></span>
+
+<p>
+<span id='ECFV'></span>
+
+<br>
+<canvas id='Canvas-ECFV-X'></canvas>
+
+<br>
+<span id='ECFV-Change'></span>
+
+<p>
+<input type='text' id='IntakeBox' size='6'>
+<button onclick='EditBox.Clicked("Intake")'> OK </button>
+<span id='Intake'></span>
+
+<br>
+<span id='UO'></span>
+
+
+</div>
+
+<div class="RightColumn">
+
+<canvas id='Canvas-RAP-UO'></canvas>
+<br>
+<canvas id='Canvas-ECFV-AP'></canvas>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

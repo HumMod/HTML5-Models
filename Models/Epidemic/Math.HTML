@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+   Math.HTML
+
+   Title : Epidemic
+   Created : 2011-06-22
+   Revised : 2011-06-22
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Epidemic Model - Math </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Math </span>
+
+<p>
+Three differential equations track the head counts for the
+healthy group, contagious group and the recovered group.
+All three variables represent number of individuals in the
+group.
+<ul>
+
+<li> H = Healthy Head Count
+<li> dH/dX = Healthy Change Rate 
+<p>
+<li> C = Contagious Head Count
+<li> dC/dX = Contagious Change Rate
+<p>
+<li> R = Recovered Head Count
+<li> dR/dX = Recovered Change Rate
+
+</ul>
+
+<p style="margin-left:12px;">
+(1) H = <img src = "../../Services/SmallIntegralSign.BMP">(dH/dX) dX
+<br>
+(2) C = <img src = "../../Services/SmallIntegralSign.BMP">(dC/dX) dX
+<br>
+(3) R = <img src = "../../Services/SmallIntegralSign.BMP">(dR/dX) dX
+
+<p>
+A parameter is available to set the initial size of the
+contagious group.
+
+<p style="margin-left:12px;">
+(4) C(0) = 5
+
+<p>
+The contagion rate for this epidemic depends the head
+counts for the healthy and contagious groups and on
+the virulence of the contagion. The units for virulence
+are 1/Person-Day.
+
+<p style="margin-left:12px;">
+(5) Virulence = 0.001
+<br>
+(6) ContagionRate = Virulence * H * C
+
+<p>
+The recovery rate for this epidemic depend on the
+contagious head count and the recovery speed. The
+recovery speed units are 1/Day.
+
+<p style="margin-left:12px;">
+(7) RecoverySpeed = 0.1
+<br>
+(8) RecoveryRate = RecoverySpeed * C
+
+<p>
+We now have enough information to calculate the rates of
+change for the three groups.
+
+<p style="margin-left:12px;">
+(9) dH/dX = - ContagionRate
+<br>
+(10) dC/dX = ContagionRate - RecoveryRate
+<br>
+(11) dR/dX = RecoveryRate
+
+</body>
+</html>

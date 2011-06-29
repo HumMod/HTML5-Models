@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!--
+   DetailsMenu.HTML
+
+   Created : 2011-06-24
+   Revised : 2011-06-24
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Menu </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../Style.CSS'>
+</head>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../Services/Menu.CSS'
+>
+
+<body onload='top.Menu.MainLoaded()'>
+
+<input
+   type = "button"
+   id = "GoButton"
+   value = "Go"
+   disabled = "true"
+   onClick = "top.SolveControl.Go()"
+>
+
+<select id = "GoPicks" disabled = "true"></select>
+
+<br>
+<input
+   type = "button"
+   id = "StopButton"
+   value = "Stop"
+   disabled = "true"
+   onClick = "top.SolveControl.Stop()"
+>
+
+<input
+   type = "button"
+   id = "RestartButton"
+   value = "Restart"
+   disabled = "true"
+   onClick = "top.SolveControl.Restart()"
+>
+
+<input
+   type = "button"
+   id = "OverlayButton"
+   value = "Overlay"
+   disabled = "true"
+   onClick = "top.SolveControl.Overlay()"
+>
+
+<p>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Results"
+   onClick = "top.Launch.LoadPanel('Results.HTML')"
+>
+
+<p>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Overview"
+   onClick = "top.Launch.LoadPanel('Overview.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Details"
+   onClick = "top.Launch.LoadPanel('Details.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Variables"
+   onClick = "top.Launch.CreatePanel('Variables')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "History"
+   onClick = "top.Launch.CreatePanel('History')"
+>
+
+<p>
+<input
+   type = "button"
+   id = "NextAlone"
+   value = "Next"
+   onClick = "top.Menu.LoadNext()"
+>
+
+</body>
+</html>

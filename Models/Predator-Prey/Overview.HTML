@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+   Overview.HTML
+
+   Title : Predator-Prey
+   Created : 2011-06-21
+   Revised : 2011-06-21
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Predator-Prey - Overview </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Overview </span>
+
+<p>
+This is the Predator-Prey Model. Wolves are the
+predators and moose are the prey.
+
+<p>
+This model starts with some ordinary population dynamics
+... and then it gets interesting.
+
+<p>
+The moose herd size (head count) is the integral over
+time of the moose birth rate minus the moose death rate.
+
+<p>
+The wolf herd size (head count) is the integral over
+time of the wolf birth rate minus the wolf death rate.
+
+<p>
+Birth rates are the product of a fertility factor and
+herd size.
+
+<p>
+Death rates are the product of a mortality factor and
+herd size.
+
+<p>
+Now here is where it gets interesting. We add in predation.
+Wolves kill the moose and eat them. This has two important
+effects.
+
+<ul>
+
+<li> Predation increases wolf fertility as a function of
+moose food value, wolf hunting skills, and the size of the
+wolf herd.
+
+<p>
+<li> Predation increases moose mortality as a function of
+wolf hunting skills and the size of the wolf herd.
+
+</ul>
+
+So the end result is that while wolves are increasing
+their fertility factor, they are also decreasing their
+food supply. The model illustrates that this is a very
+unstable relationship.
+
+</body>
+</html>

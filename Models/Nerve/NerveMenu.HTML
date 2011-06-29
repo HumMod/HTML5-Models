@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<!--
+   NerveMenu.HTML
+
+   Created : 2011-06-27
+   Revised : 2011-06-28
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Menu </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'>
+</head>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Services/Menu.CSS'
+>
+
+<body onload='top.Menu.MainLoaded()'>
+
+<input
+   type = "button"
+   id = "GoButton"
+   value = "Go"
+   disabled = "true"
+   onClick = "top.SolveControl.Go()"
+>
+
+<select id = "GoPicks" disabled = "true"></select>
+
+<br>
+<input
+   type = "button"
+   id = "StopButton"
+   value = "Stop"
+   disabled = "true"
+   onClick = "top.SolveControl.Stop()"
+>
+
+<input
+   type = "button"
+   id = "RestartButton"
+   value = "Restart"
+   disabled = "true"
+   onClick = "top.SolveControl.Restart()"
+>
+
+<input
+   type = "button"
+   id = "OverlayButton"
+   value = "Overlay"
+   disabled = "true"
+   onClick = "top.SolveControl.Overlay()"
+>
+
+<p>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Summary"
+   onClick = "top.Launch.LoadPanel('Summary.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Stimulators"
+   onClick = "top.Launch.LoadPanel('Stimulators.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Na+ Conductance"
+   onClick = "top.Launch.LoadPanel('NaConductance.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "K+ Conductance"
+   onClick = "top.Launch.LoadPanel('KConductance.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Na+ Channels"
+   onClick = "top.Launch.LoadPanel('NaChannels.HTML')"
+>
+
+<p>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Overview"
+   onClick = "top.Launch.LoadPanel('Overview.HTML')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "Variables"
+   onClick = "top.Launch.CreatePanel('Variables')"
+>
+
+<br>
+<input
+   type = "button"
+   class = "Buttons"
+   value = "History"
+   onClick = "top.Launch.CreatePanel('History')"
+>
+
+<p>
+<input
+   type = "button"
+   id = "NextAlone"
+   value = "Next"
+   onClick = "top.Menu.LoadNext()"
+>
+
+</body>
+</html>

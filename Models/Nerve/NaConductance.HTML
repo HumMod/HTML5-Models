@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+   NaConductance.HTML
+
+   Model : Nerve
+   Panel : NaConductance
+   Created : 2011-06-27
+   Revised : 2011-06-27
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Nerve : Na+ Conductance </title>
+
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='../../Style.CSS'
+>
+
+<script language = "javascript" src = "NaConductance.JS"></script>
+<script language = "javascript" src = "../../Drawing/Drawing.JS"></script>
+<script language = "javascript" src = "../../Drawing/Painter.JS"></script>
+<script language = "javascript" src = "../../Drawing/Reference.JS"></script>
+<script language = "javascript" src = "../../Drawing/Value.JS"></script>
+<script language = "javascript" src = "../../Drawing/MinMax.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/LineTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotLine.JS"></script>
+<script language = "javascript" src = "../../Drawing/PlotSymbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/GraphTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/EditBox.JS"></script>
+<script language = "javascript" src = "../../Drawing/Symbol.JS"></script>
+<script language = "javascript" src = "../../Drawing/SymbolDraw.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/BarTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/CurveTools.JS"></script>
+<script language = "javascript" src = "../../Drawing/Info.JS"></script>
+<script language = "javascript" src = "../../Drawing/RadioButtons.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyGraph.JS"></script>
+<script language = "javascript" src = "../../Drawing/FunkyTools.JS"></script>
+
+</head>
+
+<body onload = "Results.NewPanel()">
+
+<div class="LeftColumn">
+<img src = "../../Drawing/Chart.BMP"> Na+ Conductance
+
+<p><span id='X'></span>
+
+<p>
+<span id='G-Na'></span>
+
+<p>
+<span id='Na-Closed'></span>
+<br>
+<span id='Na-Open'></span>
+
+<p>
+<span id='Na-Fract-Open'></span>
+<br>
+<span id='Na-Fract-Open-Change' class='Indented'></span>
+
+<p>
+<canvas id='Canvas-1'></canvas>
+<br>
+Open = Red, Closed = Blue
+
+</div>
+
+<div class="RightColumn">
+
+<span id='Na-Fract-Open-Tau'></span>
+<br>
+<canvas id='Canvas-Tau'></canvas>
+<br>
+<span id='Na-Fract-Open-SS'></span>
+<br>
+<canvas id='Canvas-SS'></canvas>
+<br>
+<span id='V'></span>
+
+</div>
+
+</body>
+</html>
+
+<!-- End -->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--
+   Details.HTML
+
+   Model : First-OrderDE
+   Created : 2011-06-24
+   Revised : 2011-06-24
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> First-OrderDE : Details </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Details </span>
+
+<p>
+The differential equation introduced in Overview is
+
+<p class='Indented'>
+   (1) dY/dX = - K * Y
+
+<p>
+with Y0 being the initial value of Y.
+
+<p>
+Equation (1) can also be expressed as an
+integral equation.
+
+<p class='Indented'>
+   (4) Y = <img src="../../Services/SmallIntegralSign.BMP">(dY/dX) dX
+
+<p>
+in conjunction with
+
+<p class='Indented'>
+   (1) dY/dX = - K * Y
+
+<p>
+The exact solution to Equations (4) and
+(1) is
+
+<p class='Indented'>
+   (5) Exact_Y = Y0 * exp (-K * X)
+
+<p>
+The error in the calculated solution is
+
+<p class='Indented'>
+   (6) Error = Exact_Y - Calculated_Y
+
+<p>
+As noted, this is one of the few differential
+equations that has an exact solution. For all
+others, numerical solution is required.
+
+</body>
+</html>

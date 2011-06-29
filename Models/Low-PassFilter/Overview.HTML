@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+   Overview.HTML
+
+   Model : Low-Pass Filter
+   Created : 2011-06-24
+   Revised : 2011-06-24
+   Author : Tom Coleman
+   Copyright : 2011-2011
+   By : University of Mississippi Medical Center
+-->
+
+<html>
+<head>
+<title> Low-Pass Filter : Overview </title>
+
+<link
+   rel='stylesheet'
+   type='text/css'
+   href='../../Style.CSS'
+>
+
+</head>
+
+<body>
+
+<span class='Title'> Overview </span>
+
+<p>
+A low-pass filter will smooth an oscillating
+signal by attenuating higher frequency
+oscillations while passing lower frequency
+oscillations.
+
+<p>
+This model is a first-order, low-pass filter
+which is implemented by the first-order
+differential equation
+
+<p class='Indented'>
+   dOutput / dt = K * (Input - Output)
+
+<p>
+The independent variable is time.
+
+<p>
+We define a low-frequency sinusoid (Signal)
+and a high-frequency sinusoid (Noise).
+
+<p>
+This model (Low-Pass Filter) uses a high
+frequency sinusoid to represent noise, while
+a companion model (Noise) uses white noise
+to represent noise.
+
+<p>
+The cutoff frequency of the filter defines
+the filter's performance.  Signals with
+frequencies less than the cutoff frequency
+will pass through the filter while signals
+with higher frequencies will be attenuated.
+
+</body>
+</html>
